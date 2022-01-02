@@ -24,13 +24,36 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <title>WonseopKim</title>
+<style type="text/css">
+/* 공통부분 */
+.inner {
+	width: 1536px;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+}
+
+/* 매뉴컨테이너 */
+.inner .menu-container {
+	background: #212140;
+	width: 25%;
+	height: 700px;
+}
+/* 출력되는 부분 */
+.inner .show-container {
+	width: 75%;
+	height: 700px;
+	overflow-y: auto;
+	background-color: blue;
+}
+</style>
 </head>
 <body>
-	<div>
-		<div class="">
+	<div class = "inner">
+		<div class="menu-container">
 			<tiles:insertAttribute name="menu"/>
 		</div>
-		<div class="">
+		<div class="show-container">
 			<tiles:insertAttribute name="main"/>
 		</div>
 	</div>
